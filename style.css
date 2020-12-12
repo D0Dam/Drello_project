@@ -1,0 +1,100 @@
+:root {
+  --bg-color: #a685E2;
+  --list-color: #e6e6e6;
+  --btn-hover-color: #bbbbbb;
+  --btn-bg-color: #f1f1f1;
+  --addbtn-bg-color: #61b15a;
+  --font: 'Raleway';
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  font-family: var(--font);
+}
+
+button {
+  border: none;
+  border-radius: 3%;
+  font-family: var(--font);
+}
+button.addList {
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 36px;
+  width: 248px;
+  margin: 24px;
+}
+button.enterCard {
+  background-color: var(--list-color);
+  height: 36px;
+  width: 248px;
+}
+button.addCard {
+  padding: 6px;
+  border-radius: 3px;
+  background-color: var(--addbtn-bg-color);
+  font-weight: 600;
+  color: white;
+}
+button.exitCard {
+  padding: 0 0 0 8px;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 18px;
+  height: 36px;
+  background-color: var(--list-color);
+}
+button.enterCard:hover{
+  background-color: var(--btn-hover-color);
+  transition: background-color 0.5s;
+}
+button.addList:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: background-color 0.5s;
+}
+.all {
+  display: flex;
+  flex-direction: row;
+}
+.lists {
+  display: flex;
+  flex-direction: row;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  border-radius: 2%;
+  width: 248px;
+  background-color: var(--list-color);
+  margin: 16px;
+  padding: 8px;
+}
+.cards {
+  margin:8px 0;
+  padding:0; 
+}
+.card {
+  margin-bottom: 8px;
+  background-color: var(--btn-bg-color);
+  padding: 8px 0 8px 4px;
+  list-style: none;
+}
+.enters {
+  display: flex;
+  flex-direction: column;
+}
+.textCard {
+  margin-bottom: 6px;
+}
+.addBtn {
+  padding: 0;
+  margin: 0;
+  height: 32px;
+  display: flex;
+}
+
+
+.enters {
+  display: none;
+}

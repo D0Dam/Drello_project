@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="all">
+    <div class="lists">
+      
+      <div class="list">
+        <div class="listTitle">example list</div>
+        <ul class="cards">
+          <li class="card">you can in it</li>
+          <li class="card">you can in it</li>
+          <li class="card">you can in it</li>
+          <li class="card">you can in it</li>          
+        </ul>
+        <button class="enterCard" onclick="enterCard()">+ Add another card</button>
+        <div class="enters">
+          <textarea class="textCard" placeholder="Enter your card."></textarea>
+          <div class="addBtn">
+            <button class="addCard">Add Card</button>
+            <button class="exitCard" onclick="exitBtn()">X</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="list">
+        <div class="listTitle">example list</div>
+        <ul class="cards">
+          <li class="card">you can in it</li>
+          <li class="card">you can in it</li>          
+        </ul>
+        <button class="enterCard" onclick="enterCard()">+ Add another card</button>
+        <div class="enters">
+          <textarea class="textCard" placeholder="Enter your card."></textarea>
+          <div class="addBtn">
+            <button class="addCard">Add Card</button>
+            <button class="exitCard" onclick="exitBtn()">X</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="addList">+ Add another list</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
