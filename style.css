@@ -12,6 +12,7 @@ body {
   padding: 0;
   background-color: var(--bg-color);
   font-family: var(--font);
+  overflow-x: scroll;
 }
 
 button {
@@ -19,11 +20,28 @@ button {
   border-radius: 3%;
   font-family: var(--font);
 }
+button.listBtn {
+  width: 15%;
+  font-weight: 600;
+  background-color: var(--list-color);
+}
+button.listBtn:hover {
+  background-color: var(--btn-hover-color);
+  color: white;
+  transition: background-color 0.5s;
+  transition: color 0.3s;
+}
+button.cardBtn {
+  display: none;
+  background-color: var(--btn-bg-color);
+  font-weight: 600;
+}
 button.addList {
   background-color: rgba(255, 255, 255, 0.3);
   height: 36px;
   width: 248px;
   margin: 24px;
+  flex-shrink: 0;
 }
 button.enterCard {
   background-color: var(--list-color);
@@ -71,6 +89,10 @@ button.addList:hover {
   margin: 16px;
   padding: 8px;
 }
+.top{
+  display: flex;
+  justify-content: space-between;
+}
 .cards {
   margin:8px 0;
   padding:0; 
@@ -80,6 +102,9 @@ button.addList:hover {
   background-color: var(--btn-bg-color);
   padding: 8px 0 8px 4px;
   list-style: none;
+  word-break: break-all;
+  display: flex;
+  justify-content: space-between;
 }
 .enters {
   display: flex;
@@ -108,9 +133,14 @@ button.addList:hover {
   flex-direction: column;
   height: 84px;
   border-radius: 4px;
+  flex-shrink: 0;
 }
 .addAnotherList .inputListName {
   width: 100% !important;
   height: 32px;
   margin: 4px 0;
+}
+
+.card:hover .cardBtn {
+  display: block;
 }

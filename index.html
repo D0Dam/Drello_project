@@ -13,16 +13,16 @@
     <div class="lists">
       
       <div class="list list1">
-        <div class="listTitle">example list</div>
+        <div class="top">
+          <div class="listTitle">example list</div>
+          <button class="listBtn" onclick="deleteList(this)">X</button>
+        </div>
         <ul class="cards">
-          <li class="card">you can in it</li>
-          <li class="card">you can in it</li>
-          <li class="card">you can in it</li>
-          <li class="card">you can in it</li>          
+          <li class="card" draggable="true">you can in it <button class="cardBtn" onclick="deleteCard(this)">X</button></li>         
         </ul>
         <button class="enterCard" onclick="enterCard(1)">+ Add another card</button>
         <div class="enters">
-          <textarea class="textCard t1" placeholder="Enter your card."></textarea>
+          <textarea class="textCard t1" placeholder="Enter your card." onkeypress="addCard(1, event)"></textarea>
           <div class="addBtn">
             <button class="addCard" onclick="addCard(1)">Add Card</button>
             <button class="exitCard" onclick="exitBtn(1)">X</button>
@@ -34,7 +34,7 @@
     <button class="addList" onclick="showEnters()">+ Add another list</button>
     <div class="addAnotherList">
       <div class="listEnters">
-        <input class="inputListName" placeholder="Enter your list."></input>
+        <input class="inputListName" placeholder="Enter your list.">
         <div class="addBtn">
           <button class="addCard" onclick="addAnotherList()">Add List</button>
           <button class="exitCard" onclick="exitShowEnters()">X</button>
