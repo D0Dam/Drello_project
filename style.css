@@ -60,6 +60,7 @@ button.addList:hover {
 .lists {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
 }
 .list {
   display: flex;
@@ -94,7 +95,22 @@ button.addList:hover {
   display: flex;
 }
 
-
 .enters {
   display: none;
+}
+
+.addAnotherList {
+  margin-top: 16px;
+  padding: 4px 8px 0 4px;
+  width: 248px;
+  background-color: var(--list-color);
+  display: none;
+  flex-direction: column;
+  height: 84px;
+  border-radius: 4px;
+}
+.addAnotherList .inputListName {
+  width: 100% !important;
+  height: 32px;
+  margin: 4px 0;
 }

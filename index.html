@@ -12,7 +12,7 @@
   <div class="all">
     <div class="lists">
       
-      <div class="list">
+      <div class="list list1">
         <div class="listTitle">example list</div>
         <ul class="cards">
           <li class="card">you can in it</li>
@@ -20,34 +20,28 @@
           <li class="card">you can in it</li>
           <li class="card">you can in it</li>          
         </ul>
-        <button class="enterCard" onclick="enterCard()">+ Add another card</button>
+        <button class="enterCard" onclick="enterCard(1)">+ Add another card</button>
         <div class="enters">
-          <textarea class="textCard" placeholder="Enter your card."></textarea>
+          <textarea class="textCard t1" placeholder="Enter your card."></textarea>
           <div class="addBtn">
-            <button class="addCard">Add Card</button>
-            <button class="exitCard" onclick="exitBtn()">X</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="list">
-        <div class="listTitle">example list</div>
-        <ul class="cards">
-          <li class="card">you can in it</li>
-          <li class="card">you can in it</li>          
-        </ul>
-        <button class="enterCard" onclick="enterCard()">+ Add another card</button>
-        <div class="enters">
-          <textarea class="textCard" placeholder="Enter your card."></textarea>
-          <div class="addBtn">
-            <button class="addCard">Add Card</button>
-            <button class="exitCard" onclick="exitBtn()">X</button>
+            <button class="addCard" onclick="addCard(1)">Add Card</button>
+            <button class="exitCard" onclick="exitBtn(1)">X</button>
           </div>
         </div>
       </div>
     </div>
 
-    <button class="addList">+ Add another list</button>
+    <button class="addList" onclick="showEnters()">+ Add another list</button>
+    <div class="addAnotherList">
+      <div class="listEnters">
+        <input class="inputListName" placeholder="Enter your list."></input>
+        <div class="addBtn">
+          <button class="addCard" onclick="addAnotherList()">Add List</button>
+          <button class="exitCard" onclick="exitShowEnters()">X</button>
+        </div>
+      </div>
+    </div>
+
   </div>
   <script src="script.js"></script>
 </body>
